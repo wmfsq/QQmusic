@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="function.js"></script>
+  <title>QQ音乐img</title>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="header">
+    <div class="logo">
+      <img src="./QQ音乐img/img/logo.png" alt="QQ音乐imglogo">
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#">音乐馆</a></li>
+        <li><a href="#">我的音乐</a></li>
+        <li><a href="#">客户端</a></li>
+        <li><a href="#">音乐号</a></li>
+        <li><a href="#">VIP</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <div class="search-container">
+        <input type="text" placeholder="中国新歌声第二季">
+        <button class="search-btn"></button>
+      </div>
+    </div>
+    <div class="login">
+      <a href="#" class="login-btn">登录</a>
+      <div class="vip-dropdown-container">
+          <button class="vip-btn" id="vipBtn">开通VIP<span class="arrow">▲</span></button>
+          <div class="vip-dropdown-menu" id="vipDropdown">
+              <a href="#" class="dropdown-item">开通超级会员</a>
+              <a href="#" class="dropdown-item">开通绿钻豪华版</a>
+          </div>
+      </div>
+      <div class="pay-dropdown-container">
+          <button class="pay-btn" id="payBtn">充值<span class="arrow">▲</span></button>
+        <div class="pay-dropdown-menu" id="payDropdown">
+            <a href="#" class="dropdown-item">购买乐币</a>
+            <div class="dropdown-item submenu-container">
+                <a href="#" class="submenu-item recharge-ticket">充值饭票</a>
+                <a href="#" class="submenu-item invoice-item">开具发票</a>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+  
+  <!-- 新歌首发 -->
+<div class="new-songs">
+  <h2>新歌首发</h2>
+  <div class="songs-tabs">
+    <span class="active" data-region="内地">内地</span>
+    <span data-region="港台">港台</span>
+    <span data-region="欧美">欧美</span>
+    <span data-region="韩国">韩国</span>
+    <span data-region="日本">日本</span>
+    <a href="#">全部></a>
+  </div>
+  <div class="songs-list">
+    
+    <!-- 轮播容器 -->
+    <div class="carousel-container">
+        <!-- 左侧箭头 -->
+      <div class="carousel-arrow left-arrow" id="leftArrow"></div>
+      
+      <!-- 右侧箭头 -->
+      <div class="carousel-arrow right-arrow" id="rightArrow"></div>
+      <!-- 内地 -->
+      <div class="song-item-container active" data-region="内地">
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/11.jpg" alt="歌曲封面">
+          </div>
+          <p>我们的时光</p>
+          <p style="color: darkgray;">TFBOYS</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/12.jpg" alt="歌曲封面">
+          </div>
+          <p>异想</p>
+          <p style="color: darkgray;">陈明</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/13.jpg" alt="歌曲封面">
+          </div>
+          <p>陪你听全世界</p>
+          <p style="color: darkgray;">丢火车乐队</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/14.jpg" alt="歌曲封面">
+          </div>
+          <p>中国新歌声第二季 第4期</p>
+          <p style="color: darkgray;">中国新歌声</p>
+        </div>
+      </div>
+      
+      <!-- 港台歌曲 -->
+      <div class="song-item-container" data-region="港台">
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/12.jpg" alt="歌曲封面">
+          </div>
+          <p>港台歌曲1</p>
+          <p style="color: darkgray;">歌手A</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/12.jpg" alt="歌曲封面">
+          </div>
+          <p>港台歌曲2</p>
+          <p style="color: darkgray;">歌手B</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/13.jpg" alt="歌曲封面">
+          </div>
+          <p>港台歌曲3</p>
+          <p style="color: darkgray;">歌手C</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/14.jpg" alt="歌曲封面">
+          </div>
+          <p>港台歌曲4</p>
+          <p style="color: darkgray;">歌手D</p>
+        </div>
+      </div>
+      
+      <!-- 欧美歌曲 -->
+      <div class="song-item-container" data-region="欧美">
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/11.jpg" alt="歌曲封面">
+          </div>
+          <p>欧美歌曲1</p>
+          <p style="color: darkgray;">Artist A</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/12.jpg" alt="歌曲封面">
+          </div>
+          <p>欧美歌曲2</p>
+          <p style="color: darkgray;">Artist B</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/13.jpg" alt="歌曲封面">
+          </div>
+          <p>欧美歌曲3</p>
+          <p style="color: darkgray;">Artist C</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/14.jpg" alt="歌曲封面">
+          </div>
+          <p>欧美歌曲4</p>
+          <p style="color: darkgray;">Artist D</p>
+        </div>
+      </div>
+      
+      <!-- 韩国歌曲 -->
+      <div class="song-item-container" data-region="韩国">
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/11.jpg" alt="歌曲封面">
+          </div>
+          <p>韩国歌曲1</p>
+          <p style="color: darkgray;">K-Artist A</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/12.jpg" alt="歌曲封面">
+          </div>
+          <p>韩国歌曲2</p>
+          <p style="color: darkgray;">K-Artist B</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/13.jpg" alt="歌曲封面">
+          </div>
+          <p>韩国歌曲3</p>
+          <p style="color: darkgray;">K-Artist C</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/14.jpg" alt="歌曲封面">
+          </div>
+          <p>韩国歌曲4</p>
+          <p style="color: darkgray;">K-Artist D</p>
+        </div>
+      </div>
+      
+      <!-- 日本歌曲 -->
+      <div class="song-item-container" data-region="日本">
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/11.jpg" alt="歌曲封面">
+          </div>
+          <p>日本歌曲1</p>
+          <p style="color: darkgray;">J-Artist A</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/12.jpg" alt="歌曲封面">
+          </div>
+          <p>日本歌曲2</p>
+          <p style="color: darkgray;">J-Artist B</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/13.jpg" alt="歌曲封面">
+          </div>
+          <p>日本歌曲3</p>
+          <p style="color: darkgray;">J-Artist C</p>
+        </div>
+        <div class="song-item">
+          <div class="song-cover">
+            <img src="./QQ音乐img/img/14.jpg" alt="歌曲封面">
+          </div>
+          <p>日本歌曲4</p>
+          <p style="color: darkgray;">J-Artist D</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 热门歌单 -->
+  <div class="hot-playlists">
+    <h2>热门歌单</h2>
+    <div class="playlists-list">
+      <div class="playlist-item" style="background-color: rgb(51,51,51)">
+        <div class="playlist-cover">   
+          <img src="./QQ音乐img/img/21.jpg" alt="歌单封面">
+        </div>
+        <p>权威：香港英皇旗下歌手全收录</p>
+      </div>
+      <div class="playlist-item" style="background-color: rgba(65,65,65)">
+        <div class="playlist-cover">   
+          <img src="./QQ音乐img/img/22.jpg" alt="歌单封面">
+        </div>
+        <p>自创语言：历史老师听了也蒙圈的造语歌</p>
+      </div>
+      <div class="playlist-item" style="background-color: rgb(51,51,51)">
+        <div class="playlist-cover">   
+          <img src="./QQ音乐img/img/23.jpg" alt="歌单封面">
+        </div>
+        <p>YouTube点击量TOP100的EDM电音视频</p>
+      </div>
+      <div class="playlist-item" style="background-color: rgba(65,65,65)">
+        <div class="playlist-cover">   
+          <img src="./QQ音乐img/img/24.jpg" alt="歌单封面">
+        </div>
+        <p>一个人在家吃泡面绝对会听哭的BGM</p>
+      </div>
+    </div>
+  </div>
+  <!-- MV首播 -->
+  <div class="mv-premiere">
+    <h2>MV首播</h2>
+    <div class="mvs-tabs">
+      <span class="active">全部</span>
+      <span>内地</span>
+      <span>港台</span>
+      <span>欧美</span>
+      <span>韩国</span>
+      <span>日本</span>
+      <a href="#">全部></a>
+    </div>
+    <div class="mvs-list">
+      <div class="mv-item">
+        <div class="mv-cover">
+          <img src="./QQ音乐img/img/31.jpg" alt="MV封面">
+        </div>
+        <p style="color: black;font-size: 14px;">Summer Storm</p>
+        <p>제시카</p>
+        <p>13.9万</p>
+      </div>
+      <div class="mv-item">
+        <div class="mv-cover">
+          <img src="./QQ音乐img/img/32.jpg" alt="MV封面">
+        </div>
+        <p style="color:black ;font-size: 14px;">海胆</p>
+        <p>陈奕迅</p>
+        <p>10.3万</p>
+      </div>
+      <div class="mv-item">
+        <div class="mv-cover">
+          <img src="./QQ音乐img/img/33.jpg" alt="MV封面">
+        </div>
+        <p style="color: black;font-size: 14px;">我心翱翔</p>
+        <p>SNH48</p>
+        <p>1.8万</p>
+      </div>
+      <div class="mv-item">
+        <div class="mv-cover">
+          <img src="./QQ音乐img/img/34.jpg" alt="MV封面">
+        </div>
+        <p style="color: black;font-size: 14px;">你点的歌救了我 (影视版)(《噗通噗通我爱你》电视剧片头曲)</p>
+        <p>A-Lin</p>
+        <p>6272</p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- 底部 -->
+<div class="footer">
+  <!-- 顶部三栏布局 -->
+  <div class="footer-top">
+    <!-- 下载客户端 -->
+    <div class="download-section">
+      <h3>下载QQ音乐img客户端</h3>
+      <div class="platforms">
+        <a href="#" class="platform-item windows">
+          <span>PC版</span>
+        </a>
+        <a href="#" class="platform-item mac">
+          <span>Mac版</span>
+        </a>
+        <a href="#" class="platform-item android">
+          <span>Android版</span>
+        </a>
+        <a href="#" class="platform-item iphone">
+          <span>iPhone版</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 特色产品 -->
+    <div class="features-section">
+      <h3>特色产品</h3>
+      <div class="features">
+        <a href="#" class="feature-item karaoke">
+          <span>全民K歌</span>
+        </a>
+        <a href="#" class="feature-item supersound">
+          <span>Super Sound</span>
+        </a>
+        <a href="#" class="feature-item qplay">
+          <span>QPlay</span>
+        </a>
+        <div class="feature-row">
+          <a href="#" class="feature-item text-only">
+            <span>车载互联</span>
+          </a>
+          <a href="#" class="feature-item text-only">
+            <span>QQ演出</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 合作链接 -->
+    <div class="partners-section">
+      <h3>合作链接</h3>
+      <div class="partners">
+        <div class="partner-column">
+          <a href="#">CJ E&M</a>
+          <a href="#">最新版QQ</a>
+          <a href="#">QQ浏览器</a>
+          <a href="#">星钻</a>
+        </div>
+        <div class="partner-column">
+          <a href="#">腾讯视频</a>
+          <a href="#">腾讯社交广告</a>
+          <a href="#">画报</a>
+          <a href="#">腾讯微云</a>
+        </div>
+        <div class="partner-column">
+          <a href="#">手机QQ空间</a>
+          <a href="#">电脑管家</a>
+          <a href="#">黄钻活动</a>
+          <a href="#">更多</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 版权信息 -->
+  <div class="copyright-section">
+    <div class="footer-links">
+      <a href="#">关于腾讯</a>
+      <a href="#">About Tencent</a>
+      <a href="#">服务条款</a>
+      <a href="#">用户服务协议</a>
+      <a href="#">隐私政策</a>
+      <a href="#">广告服务</a>
+      <a href="#">腾讯招聘</a>
+      <a href="#">客服中心</a>
+      <a href="#">网站导航</a>
+    </div>
+    <p>Copyright © 1998 - 2017 Tencent. All Rights Reserved.</p>
+    <p>腾讯公司 版权所有 腾讯网络文化经营许可证</p>
+  </div>
+</div>
+</body>
+
+</html>
